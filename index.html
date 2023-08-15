@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h5> This Employee Management is a simple project in HTML5, CSS, and JavaScript. This is an interesting project. The project contains only the admin side. <br/>The project is for adding the different records of the employees. This project uses Crud operation for the management system of employees records.<br/> About the System- This project is simply in HTML, CSS, and JavaScript. The user can add the records of many employees with their names, salary, and address. Here, the user can add the data, delete the data whenever they want, and also edit the details of the record if they have to update some data. This project includes a lot of javascript for making validations to certain parts of the project.</h5>
+    <div class="flex-container">
+        <div class="flex-child magenta">
+<table class="table">
+    <tr class="table-row">
+        <td>
+            <form onsubmit="event.preventDefault(); onFormSubmit();" >
+                <div class="container">
+                    <h1 id="heading1">Register</h1>
+                    <p id="p1">Please fill  this form to create a Record.</p>
+                    <hr>
+            
+                    <label id="label" for="Emp-Name"><b>Emp-Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" required >
+            
+                    <label id="label" for="City"><b>City</b></label>
+                    <input type="text" placeholder="Enter City" name="city" id="city" required >
+            
+                    <label id="label" for="salary"><b>Salary</b></label>
+                    <input type="number" name="salary" id="salary"placeholder="Salary" required>
+                    <hr>
+            
+                    <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+                    <button type="submit" name="submit"class="registerbtn">Submit</button>
+                </div>
+            </form>
+        </td>
+       
+    </tr>
+    
+</table>
+</div>
+<div class="flex-child green">
+ <td>
+            <table  id="empList">
+                <h1 id="record">Record</h1>
+                <thead id="tab_head">
+                        <tr>
+                            <th>Emp-Name</th>
+                            <th>City</th>
+                            <th>Salary</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                </thead>
+               
+                <tbody id="tab_body">
+
+                </tbody>
+                
+            </table>
+        </td>
+        </div>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
